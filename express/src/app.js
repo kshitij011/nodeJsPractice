@@ -4,8 +4,12 @@ const app = express();
 
 const staticPath = path.join(__dirname, '../public');    //use absolute path not relative("../public")
 
-app.use(express.static(staticPath))
+app.use(express.static(staticPath)) //this will run before all the routes are run
 
+app.use(function(req, res, next){
+    console.log("Hello from midddleware");
+    next();
+})
 app.get("/", (req, res)=>{
     res.send("Hello from the express!")
 })
