@@ -1,0 +1,16 @@
+{
+  "name": "templeteengines",
+  "version": "1.0.0",
+  "description": "templete engines in express.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "KB",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "hbs": "^4.2.0"
+  }
+}
